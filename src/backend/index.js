@@ -25,7 +25,7 @@ app.get("/watch", (req, res) => {
 
 /* TEST DATA */
 
-app.use("/videos", express.static("../../test_data"))
+app.use("/testing", express.static("../../test_data"))
 
 /* INITIATING THE SERVER */
 
