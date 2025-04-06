@@ -23,6 +23,10 @@ app.get("/watch", (req, res) => {
 	res.sendFile(path.resolve("../watch.html"))
 })
 
+/* TEST DATA */
+
+app.use("/videos", express.static("../../test_data"))
+
 /* INITIATING THE SERVER */
 
 app.listen(PORT, () => {
