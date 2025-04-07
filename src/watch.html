@@ -9,27 +9,29 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
 	</head>
-	<nav style="background-color: red; padding-top: 15px; padding-bottom: 13px; position: sticky; top: 0px;">
-		<div id="nav-contents">
-			<h1 style="margin: 0; margin-left: 10px;">TransTube</h1>
-		</div>
-	</nav>
 	<body>
-		<video controls width="966px" height="543px" style="margin-top: 10px; margin-left: 10px;">
-			<source src="testing/EveryTransWord,Explained.mp4">
-		</video>
-		<div id="video-details" style="margin-left: 10px;">
-			<h2 id="title" style="margin-top: 5px; margin-bottom: 5px;">Every Trans Word, Explained.</h2>
-			<div id="detail-bar" style="width: 966px; display: flex; justify-content: flex-start; align-items: center; margin-top: -4px;">
-				<img src="testing/9to5efron_pfp.jpg" style="width: 41px; height: 41px; border-radius: 100%; border: 1px solid black;">
-				<h3 id="creator-name" style="margin-left: 5px;">efron</h3>
-				<button id="subscribe" style="width: 86px; height: 34px; text-align: center; border-radius: 10px; margin-left: 14.3px; border: 1px solid black; cursor: pointer; font-size: 14px; font-weight: bold;">Subscribe</button>
-				<div id="reactions" style="display: flex; align-items: center; background-color: #efefef; height: 34px; border-radius: 10px; border: 1px solid black; margin-left: auto;">
-					<button id="like" style="background-color: transparent; border: none; border-right: 1px solid black; cursor: pointer;">&#128077; 900</button>
-					<button id="dislike" style="background-color: transparent; border: none; cursor: pointer;">&#128078; 10</button>
-				</div>
+		<nav style="background-color: red; padding-top: 15px; padding-bottom: 13px; position: sticky; top: 0px; margin-bottom: 10px;">
+			<div id="nav-contents">
+				<h1 style="margin: 0; margin-left: 10px;">TransTube</h1>
 			</div>
-			<textarea readonly id="desc" style="width: 966px; height: 165px;">
+		</nav>
+		<div style="display: flex; justify-content: flex-start;">
+			<div>
+				<video controls width="966px" height="543px" style="margin-left: 10px;">
+					<source src="testing/EveryTransWord,Explained.mp4">
+				</video>
+				<div id="video-details" style="margin-left: 10px;">
+					<h2 id="title" style="margin-top: 5px; margin-bottom: 5px;">Every Trans Word, Explained.</h2>
+					<div id="detail-bar" style="width: 966px; display: flex; justify-content: flex-start; align-items: center; margin-top: -4px;">
+						<img src="testing/9to5efron_pfp.jpg" style="width: 41px; height: 41px; border-radius: 100%; border: 1px solid black;">
+						<h3 id="creator-name" style="margin-left: 5px;">efron</h3>
+						<button id="subscribe" style="width: 86px; height: 34px; text-align: center; border-radius: 10px; margin-left: 14.3px; border: 1px solid black; cursor: pointer; font-size: 14px; font-weight: bold;">Subscribe</button>
+						<div id="reactions" style="display: flex; align-items: center; background-color: #efefef; height: 34px; border-radius: 10px; border: 1px solid black; margin-left: auto;">
+							<button id="like" style="background-color: transparent; border: none; border-right: 1px solid black; cursor: pointer;">&#128077; 900</button>
+							<button id="dislike" style="background-color: transparent; border: none; cursor: pointer;">&#128078; 10</button>
+						</div>
+					</div>
+					<textarea readonly id="desc" style="width: 966px; height: 165px;">
 #trans #transgender
 
 i hope this could be a helpful piece explaining some of the terms that people use in trans communities to some of the newer folks coming in, 
@@ -39,15 +41,18 @@ subscribe to get noti's
 Trans Resources:
 https://southernequality.org/tyep/
 https://translifeline.org/
-			</textarea>
-		</div>
-		<div id="video-suggestions">
-			<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start;">
-				<img class="thumbnail" src="testing/thumbnail_01.avif" style="width: 168px; height: 94px;">
-				<div class="info" style="margin-left: 5px;">
-					<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">Casiopea Perfect Live II 720p60</h4>
-					<p class="creator" style="font-size: 12px; margin-top: 0;">Kristian Barrenechea</p>
+					</textarea>
 				</div>
 			</div>
+			<div id="video-suggestions">
+				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start;">
+					<img class="thumbnail" src="testing/thumbnail_01.avif" style="width: 168px; height: 94px;">
+					<div class="info" style="margin-left: 5px;">
+						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">Casiopea Perfect Live II 720p60</h4>
+						<p class="creator" style="font-size: 12px; margin-top: 0;">Kristian Barrenechea</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
