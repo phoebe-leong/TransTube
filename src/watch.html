@@ -10,29 +10,29 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<nav style="background-color: red; padding-top: 15px; padding-bottom: 13px; position: sticky; top: 0px; margin-bottom: 10px;">
+		<nav>
 			<div id="nav-contents">
-				<h1 style="margin: 0; margin-left: 10px;"><a href="/" style="text-decoration: none;">TransTube</a></h1>
+				<h1><a href="/">TransTube</a></h1>
 			</div>
 		</nav>
-		<div style="display: flex; justify-content: flex-start;">
+		<div id="watch-content">
 			<div>
-				<video controls width="966px" height="543px" style="margin-left: 10px; border-radius: 10px;">
+				<video controls>
 					<source src="testing/EveryTransWord,Explained.mp4">
 				</video>
-				<div id="video-details" style="margin-left: 10px;">
-					<h2 id="title" style="margin-top: 5px; margin-bottom: 5px;">Every Trans Word, Explained.</h2>
-					<div id="detail-bar" style="width: 966px; display: flex; justify-content: flex-start; align-items: center; margin-top: -4px; margin-bottom: -3px;">
-						<img src="testing/9to5efron_pfp.jpg" style="width: 41px; height: 41px; border-radius: 100%; border: 1px solid black;">
-						<h3 id="creator-name" style="margin-left: 5px;">efron</h3>
-						<button id="subscribe" style="width: 86px; height: 34px; text-align: center; border-radius: 10px; margin-left: 14.3px; border: 1px solid black; cursor: pointer; font-size: 14px; font-weight: bold;">Subscribe</button>
-						<div id="reactions" style="display: flex; align-items: center; background-color: #efefef; height: 34px; border-radius: 10px; border: 1px solid black; margin-left: auto;">
-							<button id="like" style="background-color: transparent; border: none; border-right: 1px solid black; cursor: pointer;">&#128077; 900</button>
-							<button id="dislike" style="background-color: transparent; border: none; cursor: pointer;">&#128078; 10</button>
+				<div id="video-details">
+					<h2 id="title">Every Trans Word, Explained.</h2>
+					<div id="detail-bar">
+						<img id="creator-pfp" src="testing/9to5efron_pfp.jpg">
+						<h3 id="creator-name">efron</h3>
+						<button id="subscribe">Subscribe</button>
+						<div id="reactions">
+							<button id="like">&#128077; 900</button>
+							<button id="dislike">&#128078; 10</button>
 						</div>
 					</div>
-					<p id="viewcount-date" style="font-weight: bold; font-size: 13.7px; margin: 0; margin-bottom: 7px;">46k views, 4 months ago</p>
-					<textarea readonly id="desc" style="width: 966px; height: 165px; border-radius: 10px; resize: none;">
+					<p id="viewcount-date">46k views, 4 months ago</p>
+					<textarea readonly id="description">
 #trans #transgender
 
 i hope this could be a helpful piece explaining some of the terms that people use in trans communities to some of the newer folks coming in, 
@@ -45,45 +45,45 @@ https://translifeline.org/
 					</textarea>
 				</div>
 			</div>
-			<div id="video-suggestions" style="margin-left: 2.5px;">
-				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 5px; cursor: pointer;">
-					<img class="thumbnail" src="testing/thumbnail_01.avif" style="width: 168px; height: 94px; border-radius: 10px;">
-					<div class="info" style="width: 230px; margin-left: 5px;">
-						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">Casiopea Perfect Live II 720p60</h4>
-						<p class="creator" style="font-size: 12px; margin-top: 0; margin-bottom: 2px;">Kristian Barrenechea</p>
-						<p class="viewcount-date" style="font-size: 12px; margin-top: 0; margin-bottom: 0;">28k views, 1 year ago</p>
+			<div id="video-suggestions">
+				<div class="suggestion">
+					<img class="thumbnail" src="testing/thumbnail_01.avif">
+					<div class="info">
+						<h4 class="title">Casiopea Perfect Live II 720p60</h4>
+						<p class="creator">Kristian Barrenechea</p>
+						<p class="viewcount-date">28k views, 1 year ago</p>
 					</div>
 				</div>
-				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 5px; cursor: pointer;">
-					<img class="thumbnail" src="testing/thumbnail_02.avif" style="width: 168px; height: 94px; border-radius: 10px;">
-					<div class="info" style="width: 230px; margin-left: 5px;">
-						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">the cure to burnout is art</h4>
-						<p class="creator" style="font-size: 12px; margin-top: 0; margin-bottom: 2px;">Sisyphus 55</p>
-						<p class="viewcount-date" style="font-size: 12px; margin-top: 0; margin-bottom: 0;">95k views, 6 days ago</p>
+				<div class="suggestion">
+					<img class="thumbnail" src="testing/thumbnail_02.avif">
+					<div class="info">
+						<h4 class="title">the cure to burnout is art</h4>
+						<p class="creator">Sisyphus 55</p>
+						<p class="viewcount-date">95k views, 6 days ago</p>
 					</div>
 				</div>
-				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 5px; cursor: pointer;">
-					<img class="thumbnail" src="testing/thumbnail_03.avif" style="width: 168px; height: 94px; border-radius: 10px;">
-					<div class="info" style="width: 230px; margin-left: 5px;">
-						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">A First Look At Raytraced Audio</h4>
-						<p class="creator" style="font-size: 12px; margin-top: 0; margin-bottom: 2px;">Vercidium</p>
-						<p class="viewcount-date" style="font-size: 12px; margin-top: 0; margin-bottom: 0;">252k views, 1 day ago</p>
+				<div class="suggestion">
+					<img class="thumbnail" src="testing/thumbnail_03.avif">
+					<div class="info">
+						<h4 class="title">A First Look At Raytraced Audio</h4>
+						<p class="creator">Vercidium</p>
+						<p class="viewcount-date">252k views, 1 day ago</p>
 					</div>
 				</div>
-				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 5px; cursor: pointer;">
-					<img class="thumbnail" src="testing/thumbnail_04.avif" style="width: 168px; height: 94px; border-radius: 10px;">
-					<div class="info" style="width: 230px; margin-left: 5px;">
-						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">Old School Deep House Mix (1993-2005)</h4>
-						<p class="creator" style="font-size: 12px; margin-top: 0; margin-bottom: 2px;">Chris Sedayao</p>
-						<p class="viewcount-date" style="font-size: 12px; margin-top: 0; margin-bottom: 0;">1.9m views, 1 year ago</p>
+				<div class="suggestion">
+					<img class="thumbnail" src="testing/thumbnail_04.avif">
+					<div class="info">
+						<h4 class="title">Old School Deep House Mix (1993-2005)</h4>
+						<p class="creator">Chris Sedayao</p>
+						<p class="viewcount-date">1.9m views, 1 year ago</p>
 					</div>
 				</div>
-				<div class="suggestion" style="display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 5px; cursor: pointer;">
-					<img class="thumbnail" src="testing/thumbnail_05.avif" style="width: 168px; height: 94px; border-radius: 10px;">
-					<div class="info" style="width: 230px; margin-left: 5px;">
-						<h4 class="title" style="margin-top: 0; margin-bottom: 2px;">Help me. help us. I am who I am.</h4>
-						<p class="creator" style="font-size: 12px; margin-top: 0; margin-bottom: 2px;">The Chai Mimikyu</p>
-						<p class="viewcount-date" style="font-size: 12px; margin-top: 0; margin-bottom: 0;">25k views, 3 months ago</p>
+				<div class="suggestion">
+					<img class="thumbnail" src="testing/thumbnail_05.avif">
+					<div class="info">
+						<h4 class="title">Help me. help us. I am who I am.</h4>
+						<p class="creator">The Chai Mimikyu</p>
+						<p class="viewcount-date">25k views, 3 months ago</p>
 					</div>
 				</div>
 			</div>

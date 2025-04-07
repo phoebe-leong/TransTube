@@ -1,3 +1,5 @@
+/* UNIVERSAL */
+
 * {
 	font-family: serif;
 	color: black;
@@ -5,4 +7,174 @@
 
 html, body {
 	margin: 0;
+}
+
+nav {
+	background-color: red;
+
+	padding-top: 15px;
+	padding-bottom: 13px;
+
+	position: sticky;
+	top: 0;
+
+	margin-bottom: 10px;
+}
+
+#nav-contents h1 {
+	margin: 0;
+	margin-left: 10px;
+}
+
+#nav-contents h1 a {
+	text-decoration: none;
+}
+
+/* WATCH.HTML */
+
+#watch-content {
+	display: flex;
+	justify-content: flex-start;
+}
+
+video {
+	width: 966px;
+	height: 543px;
+
+	margin-left: 10px;
+
+	border-radius: 10px;
+}
+
+#watch-content #video-details {
+	margin-left: 10px;
+}
+
+#video-details #title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#video-details #detail-bar {
+	width: 966px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	margin-top: -4px;
+	margin-bottom: -3px;
+}
+
+#detail-bar #creator-pfp {
+	width: 41px;
+	height: 41px;
+
+	border-radius: 100%;
+	border: 1px solid black;
+}
+
+#detail-bar #creator-name {
+	margin-left: 5px;
+}
+
+#detail-bar #subscribe {
+	width: 86px;
+	height: 34px;
+
+	text-align: center;
+
+	border-radius: 10px;
+	border: 1px solid black;
+
+	margin-left: 14.3px;
+
+	cursor: pointer;
+
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#detail-bar #reactions {
+	background-color: #efefef;
+
+	display: flex;
+	align-items: center;
+
+	height: 34px;
+
+	border-radius: 10px;
+	border: 1px solid black;
+
+	margin-left: auto;
+}
+
+#reactions #like, #reactions #dislike {
+	background-color: transparent;
+
+	border: none;
+
+	cursor: pointer;
+}
+
+#reactions #like {
+	border-right: 1px solid black;
+}
+
+#video-details #viewcount-date {
+	font-weight: bold;
+	font-size: 13.7px;
+
+	margin: 0;
+	margin-bottom: 7px;
+}
+
+#video-details #description {
+	width: 966px;
+	height: 165px;
+
+	border-radius: 10px;
+
+	resize: none;
+}
+
+#watch-content #video-suggestions {
+	margin-left: 2.5px;
+}
+
+#video-suggestions .suggestion {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-bottom: 5px;
+
+	cursor: pointer;
+}
+
+.suggestion .thumbnail {
+	width: 168px;
+	height: 94px;
+
+	border-radius: 10px;
+}
+
+.suggestion .info {
+	width: 230px;
+
+	margin-left: 5px;
+}
+
+.info .title, .info .creator {
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.info .creator, .info .viewcount-date {
+	font-size: 12px;
+}
+
+.info .viewcount-date {
+	margin-top: 0;
+	margin-bottom: 0;
 }
