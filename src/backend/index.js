@@ -22,6 +22,9 @@ app.get("/script.js", (req, res) => {
 app.get("/watch", (req, res) => {
 	res.sendFile(path.resolve("../watch.html"))
 })
+app.get("/watch.css", (req, res) => {
+	res.sendFile(path.resolve("../watch.css"))
+})
 
 /* TEST DATA */
 
