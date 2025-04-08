@@ -1,0 +1,45 @@
+#suggestions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	margin-left: 10px;
+}
+
+#suggestions .suggestion {
+	margin-right: 10px;
+
+	cursor: pointer;
+}
+
+.suggestion .thumbnail {
+	width: 317.984px;
+	height: 178.859px;
+
+	border-radius: 10px;
+}
+
+.suggestion .info {
+	width: 317.98px;
+	height: 100px;
+
+	margin-left: 0;
+}
+
+.info .title, .info .creator {
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.info .title {
+	max-height: 43px;
+}
+
+.info .creator, .info .viewcount-date {
+	font-size: 13px;
+}
+
+.info .viewcount-date {
+	margin-top: 0;
+	margin-bottom: 0;
+}

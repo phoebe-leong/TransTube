@@ -19,6 +19,9 @@ app.get("/script.js", (req, res) => {
 
 /* END BOILERPLATE FILES */
 
+app.get("/index.css", (req, res) => {
+	res.sendFile(path.resolve("../index.css"))
+})
 app.get("/watch", (req, res) => {
 	res.sendFile(path.resolve("../watch.html"))
 })
