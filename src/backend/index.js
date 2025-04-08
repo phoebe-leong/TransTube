@@ -33,6 +33,16 @@ app.get("/watch.css", (req, res) => {
 
 app.use("/testing", express.static("../../test_data"))
 
+/* 404 PAGE */
+
+app.get("/not-found.css", (req, res) => {
+	res.sendFile(path.resolve("../not-found.css"))
+})
+
+app.use((req, res, next) => {
+	res.status(404).sendFile(path.resolve("../not-found.html"))
+})
+
 /* INITIATING THE SERVER */
 
 app.listen(PORT, () => {
