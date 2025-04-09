@@ -25,6 +25,9 @@ app.get("/watch", (req, res) => {
 app.get("/channel", (req, res) => {
 	res.sendFile(path.resolve("../channel.html"))
 })
+app.get("/upload", (req, res) => {
+	res.sendFile(path.resolve("../upload.html"))
+})
 
 app.get("/index.css", (req, res) => {
 	res.sendFile(path.resolve("../index.css"))
