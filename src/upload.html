@@ -17,7 +17,23 @@
 				<h1><a href="/">TransTube</a></h1>
 			</div>
 		</nav>
-		<div id="content" style="margin-left: 10px;">
-			
+		<div id="wrapper" style="display: flex; flex-flow: column nowrap; align-items: center; padding-top: 50px;">
+			<div id="drag-drop" style="width: 65%; height: 570px; background-color: blue; border-radius: 10px; margin-bottom: 10px; display: flex; flex-flow: column wrap; justify-content: center; align-items: center;">
+				<h2 style="margin-top: 0; margin-bottom: 0;">Drag and drop files to upload</h2>
+			</div>
+			<div id="video-details" style="width: 65%">
+				<h1 id="heading" style="margin-top: 5px; margin-bottom: 0;">Video Details</h1>
+
+				<h2 class="detail-heading" style="margin-top: 15px; margin-bottom: 5px;">Title</h2>
+				<input id="title" type="text" placeholder="E.g., 'Me at the zoo'" style="width: 230px; height: 22px;">
+
+				<h2 class="detail-heading" style="margin-top: 15px; margin-bottom: 5px;">Tags</h2>
+				<input id="tags" type="text" placeholder="E.g., 'zoo, elephants, vlog'" style="width: 230px; height: 22px;">
+
+				<h2 class="detail-heading" style="margin-top: 15px; margin-bottom: 5px;">Description</h2>
+				<textarea id="description" style="width: 966px; height: 165px; resize: none; border: 1px solid black;"></textarea>
+
+				<button id="upload" style="margin-top: 10px;">Upload</button>
+			</div>
 		</div>
 	</body>
