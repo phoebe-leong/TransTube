@@ -1,0 +1,110 @@
+#channel-nav {
+	margin-bottom: 0;
+}
+
+#banner {
+	width: 100vw;
+	height: 220px;
+
+	background-repeat: no-repeat;
+}
+
+#content {
+	margin-left: 10px;
+}
+
+#content #creator-info {
+	display: flex;
+	justify-content: flex-start;
+
+	padding-top: 13px;
+	padding-bottom: 13px;
+
+	margin-top: -4px;
+}
+
+#creator-info #pfp {
+	width: 155px;
+	height: 155px;
+
+	border-radius: 100%;
+	border: 1px solid black;
+}
+
+#creator-info #info {
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+#info #name {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#info #subscribers-videos {
+	margin-top: 0;
+	margin-bottom: 6px;
+
+	font-size: 15px;
+}
+
+#info #subscribe {
+	width: 90.3px;
+	height: 35.7px;
+
+	border-radius: 10px;
+	border: 1px solid black;
+
+	font-weight: bold;
+	font-size: 14px;
+
+	cursor: pointer;
+}
+
+#content #border {
+	width: 100vw;
+	height: 1px;
+
+	background-color: black;
+
+	margin-left: -10px;
+}
+
+#content #videos {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 15px;
+}
+
+#videos .video {
+	margin-right: 10px;
+}
+
+.video .thumbnail {
+	width: 305px;
+	height: 171.5px;
+
+	border-radius: 10px;
+}
+
+.video .info {
+	width: 305px;
+	height: 90px;
+}
+
+.info .title {
+	max-height: 41px;
+
+	font-size: 18px;
+
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.info .viewcount-date {
+	font-size: 13px;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
