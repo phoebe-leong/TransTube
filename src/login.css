@@ -1,0 +1,41 @@
+#wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	margin-bottom: 10px;
+}
+
+#wrapper #sub-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+#sub-wrapper #heading {
+	margin-bottom: 0;
+}
+
+#sub-wrapper .detail-heading {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#sub-wrapper #username, #sub-wrapper #password {
+	width: 230px;
+	height: 22px;
+}
+
+#sub-wrapper #login {
+	width: 70px;
+	height: 28px;
+
+	font-size: 14px;
+
+	border-radius: 10px;
+	border: 1px solid black;
+
+	margin-top: 10px;
+
+	cursor: pointer;
+}
