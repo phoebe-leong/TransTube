@@ -28,6 +28,9 @@ app.get("/channel", (req, res) => {
 app.get("/upload", (req, res) => {
 	res.sendFile(path.resolve("../upload.html"))
 })
+app.get("/login", (req, res) => {
+	res.sendFile(path.resolve("../login.html"))
+})
 
 app.get("/index.css", (req, res) => {
 	res.sendFile(path.resolve("../index.css"))
@@ -40,6 +43,9 @@ app.get("/channel.css", (req, res) => {
 })
 app.get("/upload.css", (req, res) => {
 	res.sendFile(path.resolve("../upload.css"))
+})
+app.get("login.css", (req, res) => {
+	res.sendFile(path.resolve("../login.css"))
 })
 
 /* TEST DATA */
