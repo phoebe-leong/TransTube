@@ -44,7 +44,7 @@ app.get("/channel.css", (req, res) => {
 app.get("/upload.css", (req, res) => {
 	res.sendFile(path.resolve("../upload.css"))
 })
-app.get("login.css", (req, res) => {
+app.get("/login.css", (req, res) => {
 	res.sendFile(path.resolve("../login.css"))
 })
 
