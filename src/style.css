@@ -27,3 +27,7 @@ nav {
 #nav-contents h1 a {
 	text-decoration: none;
 }
+
+img {
+	-webkit-user-drag: none;
+}
