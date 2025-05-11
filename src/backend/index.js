@@ -38,6 +38,9 @@ app.get("/watch.css", (req, res) => {
 app.get("/channel.css", (req, res) => {
 	res.sendFile(path.resolve("../channel.css"))
 })
+app.get("/upload.css", (req, res) => {
+	res.sendFile(path.resolve("../upload.css"))
+})
 
 /* TEST DATA */
 
