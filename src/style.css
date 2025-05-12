@@ -19,13 +19,27 @@ nav {
 	margin-bottom: 10px;
 }
 
+nav #nav-contents {
+	display: flex;
+
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 #nav-contents h1 {
 	margin: 0;
-	margin-left: 10px;
 }
 
 #nav-contents h1 a {
 	text-decoration: none;
+}
+
+#icons a span {
+	cursor: pointer;
+}
+
+#icons a:not(:last-of-type) {
+	margin-right: 10px;
 }
 
 img {
