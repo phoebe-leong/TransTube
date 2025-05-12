@@ -31,6 +31,9 @@ app.get("/upload", (req, res) => {
 app.get("/login", (req, res) => {
 	res.sendFile(path.resolve("../login.html"))
 })
+app.get("/signup", (req, res) => {
+	res.sendFile(path.resolve("../signup.html"))
+})
 
 app.get("/index.css", (req, res) => {
 	res.sendFile(path.resolve("../index.css"))
@@ -46,6 +49,9 @@ app.get("/upload.css", (req, res) => {
 })
 app.get("/login.css", (req, res) => {
 	res.sendFile(path.resolve("../login.css"))
+})
+app.get("/signup.css", (req, res) => {
+	res.sendFile(path.resolve("../signup.css"))
 })
 
 /* TEST DATA */
