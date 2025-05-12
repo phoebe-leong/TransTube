@@ -40,10 +40,14 @@ video {
 
 	border-radius: 100%;
 	border: 1px solid black;
+
+	cursor: pointer;
 }
 
 #detail-bar #creator-name {
 	margin-left: 5px;
+
+	cursor: pointer;
 }
 
 #detail-bar #subscribe {
