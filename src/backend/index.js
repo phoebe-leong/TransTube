@@ -19,6 +19,10 @@ app.get("/script.js", (req, res) => {
 
 /* END BOILERPLATE FILES */
 
+app.get("/favicon.png", (req, res) => {
+	res.sendFile(path.resolve("../assets/images/favicon.png"))
+})
+
 app.get("/watch", (req, res) => {
 	res.sendFile(path.resolve("../watch.html"))
 })
